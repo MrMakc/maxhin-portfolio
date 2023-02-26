@@ -1,3 +1,64 @@
+
+//FONT
+$font-normal: 'Quicksand', sans-serif;
+$font-special: 'Gravitas One', cursive;
+
+
+
+
+
+
 * {
-  color: red;
+  font-family: $font-normal;
+}
+
+.inner-wrap {
+  width: 70%;
+}
+
+header {
+  padding: 25px;
+
+  .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+
+    .nav-button {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin: 0px 20px;
+        }
+      }
+
+      button {
+        background-color: #000;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: #FFF;
+          color: #000;
+        }
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
 }

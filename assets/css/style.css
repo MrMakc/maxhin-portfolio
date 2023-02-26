@@ -1,5 +1,48 @@
 * {
-  color: red;
+  font-family: "Quicksand", sans-serif;
+}
+
+.inner-wrap {
+  width: 70%;
+}
+
+header {
+  padding: 25px;
+}
+header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+header .inner-wrap .nav-button {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner-wrap .nav-button ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+header .inner-wrap .nav-button ul li {
+  margin: 0px 20px;
+}
+header .inner-wrap .nav-button button {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  transition: all 0.2s;
+}
+header .inner-wrap .nav-button button:hover {
+  background-color: #FFF;
+  color: #000;
+}
+header .inner-wrap .nav-button a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
