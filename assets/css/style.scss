@@ -3,28 +3,29 @@
 $font-normal: 'Quicksand', sans-serif;
 $font-special: 'Gravitas One', cursive;
 
-
-
-
-
-
 * {
   font-family: $font-normal;
 }
 
+h1 {
+  font-family: $font-special;
+}
+
 .inner-wrap {
-  width: 70%;
+  width: 1300px;
+  margin: auto
 }
 
 header {
   padding: 25px;
+  position: fixed;
+  background: #FFF;
+  width: 100%;
 
   .inner-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin: auto;
 
     .nav-button {
       display: flex;
@@ -58,6 +59,90 @@ header {
       a {
         color: inherit;
         text-decoration: inherit;
+      }
+    }
+  }
+}
+
+main {
+  .banner {
+
+    background-image: linear-gradient(270.18deg, rgba(0, 0, 0, 0.4) 0.6%, rgba(0, 0, 0, 0) 100%), url('../img/background_banner.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    height: 80vh;
+
+    display: flex;
+
+    .inner-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      figure {
+        position: relative;
+
+        &:after {
+          display: block;
+          content: ' ';
+          position: absolute;
+          right: -15%;
+          top: -15%;
+
+
+          background-color: #000;
+          box-shadow: -6px -6px 0px 1px #FFFFFF;
+
+          width: 130px;
+          height: 130px;
+        }
+
+        &:before {
+          display: block;
+          content: ' ';
+          position: absolute;
+          left: -15%;
+          bottom: -15%;
+
+
+          background-color: #000;
+          box-shadow: 6px 6px 0px 1px #FFFFFF;
+
+          width: 130px;
+          height: 130px;
+        }
+      }
+
+    }
+
+    .banner-content {
+      background-color: #FFF;
+      width: 55%;
+      padding: 40px 100px;
+
+      box-shadow: 10px 10px 0px 3px #000000;
+    }
+
+
+  }
+
+  .outline-bloc {
+
+    overflow: hidden;
+
+    .outline {
+
+      width: max-content;
+      font-size: 2rem;
+      margin-top: 70px;
+
+      span {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-family: $font-special;
+        text-transform: uppercase;
+        font-size: 2.8rem;
       }
     }
   }
