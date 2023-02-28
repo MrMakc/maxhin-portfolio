@@ -3,6 +3,11 @@
 $font-normal: 'Quicksand', sans-serif;
 $font-special: 'Gravitas One', cursive;
 
+//COLOR
+$color-black: #000;
+$color-white: #FFF;
+$color-grey: #221E1E;
+
 * {
   font-family: $font-normal;
 }
@@ -13,7 +18,15 @@ h1, h2 {
 
 h2 {
   text-transform: lowercase;
-  font-size: 2.2rem
+  font-size: 2.2rem;
+}
+
+.as-right {
+  text-align: right;
+}
+
+.as-white {
+  color: $color-white;
 }
 
 p {
@@ -29,7 +42,7 @@ p {
 header {
   padding: 25px 0px;
   position: fixed;
-  background: #FFF;
+  background: $color-white;
   width: 100%;
   z-index: 5;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -56,15 +69,15 @@ header {
       }
 
       button {
-        background-color: #000;
+        background-color: $color-black;
         color: white;
         padding: 10px;
         border: 1px solid black;
         transition: all 0.2s;
 
         &:hover {
-          background-color: #FFF;
-          color: #000;
+          background-color: $color-white;
+          color: $color-black;
         }
       }
 
@@ -152,7 +165,7 @@ main {
 
       span {
         color: white;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-shadow: -1px -1px 0 $color-black, 1px -1px 0 $color-black, -1px 1px 0 $color-black, 1px 1px 0 $color-black;
         font-family: $font-special;
         text-transform: uppercase;
         font-size: 2.8rem;
@@ -173,6 +186,30 @@ main {
         width: 60%;
       }
 
+    }
+
+  }
+
+  #confiance {
+    background-color: $color-grey;
+    padding: 50px 0px;
+    margin-top: 100px;
+
+    .inner-wrap {
+      h2 {
+        margin-bottom: 70px;
+      }
+
+      .splide__pagination {
+        bottom: -2em;
+      }
+
+      .splide__slide {
+        width: 300px;
+        height: 400px;
+        background: red;
+        margin: 10px;
+      }
     }
 
   }

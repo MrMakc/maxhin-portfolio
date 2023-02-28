@@ -11,6 +11,14 @@ h2 {
   font-size: 2.2rem;
 }
 
+.as-right {
+  text-align: right;
+}
+
+.as-white {
+  color: #FFF;
+}
+
 p {
   font-size: 1.3rem;
   line-height: 2.2rem;
@@ -111,8 +119,6 @@ main .outline-bloc {
   overflow: hidden;
 }
 main .outline-bloc .outline {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-size: 2rem;
   margin-top: 70px;
@@ -135,4 +141,23 @@ main #a-propos .content {
 }
 main #a-propos .content p {
   width: 60%;
-}/*# sourceMappingURL=style.css.map */
+}
+main #confiance {
+  background-color: #221E1E;
+  padding: 50px 0px;
+  margin-top: 100px;
+}
+main #confiance .inner-wrap h2 {
+  margin-bottom: 70px;
+}
+main #confiance .inner-wrap .splide__pagination {
+  bottom: -2em;
+}
+main #confiance .inner-wrap .splide__slide {
+  width: 300px;
+  height: 400px;
+  background: red;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
