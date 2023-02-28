@@ -116,6 +116,7 @@ main .outline-bloc .outline {
   width: max-content;
   font-size: 2rem;
   margin-top: 70px;
+  margin-left: 0px;
 }
 main .outline-bloc .outline span {
   color: white;
