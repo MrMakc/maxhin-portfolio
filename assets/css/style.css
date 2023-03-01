@@ -119,6 +119,8 @@ main .outline-bloc {
   overflow: hidden;
 }
 main .outline-bloc .outline {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   font-size: 2rem;
   margin-top: 70px;
@@ -156,8 +158,21 @@ main #confiance .inner-wrap .splide__pagination {
 main #confiance .inner-wrap .splide__slide {
   width: 300px;
   height: 400px;
-  background: red;
   margin: 10px;
+  position: relative;
 }
-
-/*# sourceMappingURL=style.css.map */
+main #confiance .inner-wrap .splide__slide .text-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  color: #FFF;
+  padding: 20px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+main #confiance .inner-wrap .splide__slide .text-container h3 {
+  font-size: 1.6rem;
+}
+main #confiance .inner-wrap .splide__slide .text-container em {
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */

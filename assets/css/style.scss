@@ -207,8 +207,31 @@ main {
       .splide__slide {
         width: 300px;
         height: 400px;
-        background: red;
         margin: 10px;
+
+        position: relative;
+
+        .text-container {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.8) 100%);
+          color: $color-white;
+
+          padding: 20px;
+
+          text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+
+          h3 {
+            font-size: 1.6rem;
+          }
+
+          em {
+            font-size: 1rem;
+          }
+          
+        }
       }
     }
 
